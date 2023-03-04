@@ -1,0 +1,41 @@
+.header{
+    flex-wrap: wrap;
+    padding:10px;
+    justify-content:center ;
+    align-items: center;
+    display: flex;
+    height:auto;
+    width:100%;
+    border:2px solid blue;
+    box-sizing:border-box;
+}
+#btn_submit{
+    font-size: 18px;
+    box-shadow: 4px -2px 2px black;
+    width:25%;
+    border-radius:10px;
+    color: white;
+    border-style: none;
+    background:linear-gradient(blue 45%,rgb(4, 55, 85))
+}
+#btn_submit::hover{
+    width:25%;
+    border-radius:10px;
+    color: white;
+    border-style: none;
+    background:linear-gradient(blue 45%,rgb(4, 55, 85))
+}
+@media screen and (max-width:650px) {
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height:20vh;
+         width:100%;
+    }
+    #btn_submit{
+        height:50%;
+        width:100px;
+    }
+    
+}
