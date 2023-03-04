@@ -10,8 +10,8 @@ import './header.css'
   return (
     <div className="header" style={mei.sendcolor}>
         {console.log(mei)}
-        <img src="https://www.geekster.in/images/logo.svg" style={{paddingRight:"5rem"}}></img>
-        <span style={{width:"15vw"}}><NavLink to='/Home' style={mei.sendcolor}>Home</NavLink></span>
+        <NavLink to ='/' style={mei.sendcolor}><img src="https://www.geekster.in/images/logo.svg" style={{paddingRight:"5rem"}}></img></NavLink>
+        <span style={{width:"15vw"}}><NavLink to='/' style={mei.sendcolor}>Home</NavLink></span>
         <span style={{width:"15vw"}}><NavLink to='/AboutUs' style={mei.sendcolor} >About Us</NavLink></span>
         <span style={{width:"15vw"}}><NavLink to='/Services' >Services</NavLink></span>
         <button id="btn_submit" style={{width:"8vw",height:"30px"}} onClick={() =>{

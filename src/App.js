@@ -14,12 +14,12 @@ function App() {
   const [Showcolor,setcolor] = useState({backgroundColor:"white",color:"black"})
   return (
     <div>
-      <div >
+        <div >
       <Himanshu.Provider value={{sendcolor:Showcolor,setbg:setcolor}}>
       <Router>
-      <Header sendcolor ={Showcolor} setbg={setcolor}/>
+      <Header sendcolor ={Showcolor} setbg={setcolor} />
       <Routes>
-        <Route exact path='/Home' element={<Home />}></Route>
+        <Route exact path='/' element={<Home />}></Route>
         <Route path='/AboutUs' element={<AboutUs />}></Route>
         <Route path='/Services' element={<Services />}></Route>
         <Route path='*' element={"404"}></Route>
