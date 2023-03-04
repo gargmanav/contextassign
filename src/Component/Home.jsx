@@ -1,9 +1,9 @@
 import React from 'react'
 import {useContext } from "react";
-import {Himanshu} from '../App';
+import {contextapi} from '../App';
 
 const Home = () => {
-  const mei = useContext(Himanshu); 
+  const mei = useContext(contextapi); 
   return (
     <div className='about' style={mei.sendcolor}>
       <center>

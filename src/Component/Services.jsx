@@ -1,10 +1,10 @@
 import React from 'react'
 import './About.css'
 import {useContext } from "react";
-import {Himanshu} from '../App';
+import {contextapi} from '../App';
 
 const Services = () => {
-  const mei = useContext(Himanshu); 
+  const mei = useContext(contextapi); 
   return (
     <div className='about' style={mei.sendcolor}>
       <center>
